@@ -22,10 +22,10 @@ urlpatterns = [
     path('task/<uuid:task_id>/plot_download', views.ajax_get_plot2, name='ajax_get_plot2'),
     path('dataset/<int:dataset_id>/tasks', views.ajax_tasks, name='ajax_tasks'),
     path('dataset/<int:dataset_id>/status', views.ajax_task_status, name='ajax_task_status'),
-#     path('analysis/<int:dataset_id>/barplot', views.ajax_comboBar_plot, name='ajax_comboBar_plot'),
-#     path('analysis/<int:dataset_id>/barplot2', views.ajax_singleBar_plot, name='ajax_singleBar_plot'),
-#     path('analysis/<int:dataset_id>/scatterplot',views.ajax_comboScatter_plot, name='ajax_comboScatter_plot'),
-#     path('analysis/<int:dataset_id>/scatterplot2',views.ajax_singleScatter_plot, name='ajax_singleScatter_plot'),
+    path('analysis/<int:dataset_id>/barplot', views.ajax_comboBar_plot, name='ajax_comboBar_plot'),
+    path('analysis/<int:dataset_id>/barplot2', views.ajax_singleBar_plot, name='ajax_singleBar_plot'),
+    path('analysis/<int:dataset_id>/scatterplot',views.ajax_comboScatter_plot, name='ajax_comboScatter_plot'),
+    path('analysis/<int:dataset_id>/scatterplot2',views.ajax_singleScatter_plot, name='ajax_singleScatter_plot'),
     path('analysis/<int:dataset_id>/plot_download', views.ajax_get_plot, name='ajax_get_plot')
 ]
 
