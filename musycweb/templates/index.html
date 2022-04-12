@@ -32,7 +32,7 @@
                 <td>{{ d.name }}</td>
                 <td>{{ d.creation_date }}</td>
                 <td><a href="{% url 'view_dataset' d.id %}">{{ d.name }} Combinations </a></td>
-                <td><a href="{% url 'analysis' d.id %}">View Comparison</a></td>
+                <td><a href="">View Comparison</a></td>
             </tr>
         {% empty %}
             <tr><td colspan="2">No Datasets</td></tr>
